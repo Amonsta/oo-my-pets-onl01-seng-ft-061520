@@ -11,7 +11,7 @@ class Owner
   end 
 
   def say_species
-    "I am a human."
+    "I am a #{@species}."
   end
 
   def self.all
@@ -39,7 +39,7 @@ class Owner
   end
 
   def buy_cat(purchase)
-    #self.buy_cat(purchase)
+    self.buy_cat(purchase) << Cat.new
   end 
 
   def buy_dog(purchase)
